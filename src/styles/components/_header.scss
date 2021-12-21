@@ -1,0 +1,15 @@
+@use '../base' as *;
+.header {
+  background-color: #333;
+  padding: var(--space-xs) 0;
+  .main-logo {
+    max-width: 250px;
+    width: 100%;
+  }
+  .nav-list {
+    a {
+      color: var(--main-color);
+      text-decoration: none;
+    }
+  }
+}
