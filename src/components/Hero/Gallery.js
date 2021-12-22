@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import listVideos from "../../db";
 const Gallery = ({handleOpen, setSelectedVideo}) => {
