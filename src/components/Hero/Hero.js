@@ -31,8 +31,8 @@ const Hero = ({handleOpen, setSelectedVideo}) => {
 
         </div>
         <div className="quick-info ">
-          <h2 className="quick-info-headline ">Lorem ipsum</h2>
-          <p className="quick-info-description">Lorem ipsum asdfdasfdsaf</p>
+          <h2 className="quick-info-headline ">BoaMistura Documental</h2>
+          <p className="quick-info-description">Blur</p>
         </div>
         
       </div>

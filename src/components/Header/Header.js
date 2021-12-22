@@ -4,7 +4,7 @@ const Header = () => {
     <header className="header"> 
       <div className="container flex@sm justify-between@sm items-center">
         <a className="main-logo" href="/">
-          <img src="logo.png" />
+          <img src="logo.svg" />
         </a>
         <ul className="nav-list flex gap-xs">
           <li><a href="/">Contacto /</a></li>

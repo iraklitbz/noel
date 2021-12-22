@@ -7,7 +7,7 @@
 // --------------------------------
 
 :root, [data-theme="default"] {
-  --main-color: #ffbf00; 
+  --main-color: #ae9c5d; 
   // main
   @include defineColorHSL(--color-primary-darker, 250, 84%, 38%);
   @include defineColorHSL(--color-primary-dark, 250, 84%, 46%);

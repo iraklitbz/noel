@@ -1,7 +1,12 @@
 @use '../base' as *;
 .header {
-  background-color: #333;
+  background-color: transparent;
   padding: var(--space-xs) 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   .main-logo {
     max-width: 250px;
     width: 100%;
