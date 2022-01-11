@@ -8,13 +8,28 @@
   left: 0;
   z-index: 1000;
   .main-logo {
-    max-width: 250px;
+    max-width: 270px;
     width: 100%;
   }
   .nav-list {
+    li {
+      display: inline-flex;
+      align-items: center;
+      &:first-child {
+        a {
+          font-weight: bold;
+        }
+      }
+    }
     a {
       color: var(--main-color);
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+    .bx {
+      font-size: 30px;
     }
   }
 }
+

@@ -118,3 +118,31 @@
 // (END) Global editor code
 
 // --------------------------------
+body {
+  background-color: #000;
+}
+
+*::-moz-selection { /* Code for Firefox */
+  display: none;
+}
+
+*::selection {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;          /* "auto" or "thin" */
+  scrollbar-color: var(--main-color) #333;   /* scroll thumb and track */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+*::-webkit-scrollbar-corner {
+  display: none;
+}

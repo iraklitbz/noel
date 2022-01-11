@@ -1,9 +1,19 @@
 const listVideos = [
   {
+    id: 1,
+    name: 'Documentary BoaMistura',
+    description: 'Produced by Blur Film & Monte Perdido',
+    urlv: 'https://vimeo.com/658634127',
+    videourl: 'https://vimeo.com/659448288',
+    img: 'trabajo1',
+    stitle: 'Documentary BoaMistura',
+    antetitulo: 'Produced by Blur Film & Monte Perdido'
+  },
+  {
     id: 2,
     name: 'Cancer de Mama Metastásico',
     description: 'Atrevia',
-    urlv: 'https://vimeo.com/657957935',
+    urlv: 'https://vimeo.com/659430808',
     videourl: 'https://vimeo.com/657957935',
     img: 'trabajo2',
     stitle: 'Cancer de Mama Metastásico',
@@ -11,23 +21,23 @@ const listVideos = [
   },
   {
     id: 3,
-    name: 'Rolex Cool Hand',
-    description: 'Speak Lee',
-    urlv: 'https://vimeo.com/244710391',
+    name: 'Rolex Cool Hand, Spike Lee',
+    description: 'Le Artisans',
+    urlv: 'https://vimeo.com/658693080',
     videourl: 'https://vimeo.com/244710391',
     img: 'trabajo3',
-    stitle: 'Rolex Cool Hand',
-    antetitulo: 'Speak Lee'
+    stitle: 'Rolex Cool Hand, Spike Lee',
+    antetitulo: 'Le Artisans'
   },
   {
     id: 4,
     name: 'Cruzcampo',
-    description: 'Ogilvy & Matthers',
+    description: 'Ogilvy & Mather',
     urlv: 'https://vimeo.com/658695280',
-    videourl: 'https://vimeo.com/659022243',
+    videourl: 'https://vimeo.com/658694195',
     img: 'trabajo4',
     stitle: 'Cruzcampo',
-    antetitulo: 'Ogilvy & Matthers'
+    antetitulo: 'Ogilvy & Mather'
   },
   {
     id: 5,
@@ -41,13 +51,14 @@ const listVideos = [
   },
   {
     id: 6,
-    name: 'Midwife Vision',
-    description: 'Prime Scape Production',
+    name: 'Documentary Silence Tears of the Midwives',
+    description: 'Produced by PrimeScape L.A',
     urlv: 'https://vimeo.com/659017850',
-    videourl: 'https://vimeo.com/659022243',
+    videourl: 'https://vimeo.com/659421102',
     img: 'trabajo6',
-    stitle: 'Documentary Midwife Vision',
-    antetitulo: 'Produced by Prime Scape Production, One Breath & ViewPark.'
+    stitle: 'Documentary Silence Tears of the Midwives',
+    antetitulo: 'Produced by PrimeScape L.A',
+    produced: 'One Breath & Midwife Vision',
   },
   {
     id: 7,
@@ -58,7 +69,7 @@ const listVideos = [
     img: 'trabajo7',
     stitle: 'Atresplayer',
     antetitulo: 'Atresplayer',
-    produced: 'Produced by Estela Producciones',
+    produced: 'Produced by Estela Films',
     gallery: ['1.jpeg','2.jpeg','3.jpeg','4.jpeg']
   },
   {
@@ -89,8 +100,8 @@ const listVideos = [
     videourl: 'https://vimeo.com/263236238',
     img: 'trabajo10',
     stitle: 'Time 2 Surrender',
-    produced: 'Executive Producer: Spike Lee & Elvis Nolasco',
-    extra1: 'Associate producer: Sonja Perryman & Yanko Perez',
+    produced: 'Executive Producer | Spike Lee & Elvis Nolasco',
+    extra1: 'Associate producer | Sonja Perryman & Yanko Perez',
     extra2: 'Produced by Kerry Mondragon',
     extra3: 'Photography by Salvador Bolivar',
     extra4: 'Edited by Noel Rayo Diz',

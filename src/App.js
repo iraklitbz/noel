@@ -44,7 +44,7 @@ function App() {
             <div className="full-ratio">
               <ReactPlayer
                   className="react-player"
-                  url={selectedVideo.urlv}
+                  url={selectedVideo.videourl}
                   width="100%"
                   height="100%"
                   controls={true}
@@ -61,7 +61,7 @@ function App() {
               {selectedVideo.extra5 ? <h4 className="text-sm margin-top-xxxs">{selectedVideo.extra5}</h4> : null}
             </div>
             {selectedVideo.gallery ? 
-                <div className="gallery margin-top-md">
+                <div className="gallery max-width-sm margin-left-auto margin-right-auto margin-top-xl">
                   {selectedVideo.gallery.map(element => (
                     <img src={`/img/trabajo${selectedVideo.id}/${element}`} />
                   ))}

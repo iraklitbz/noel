@@ -35,7 +35,8 @@ const Gallery = ({handleOpen, setSelectedVideo}) => {
               />
 
             </div>
-            <img className="imgD" src={`/img/${element.img}.jpg`} />
+            <div className="bk-quick" style={{ backgroundImage: `url(/img/${element.img}.jpg)` }}></div>
+        
             <div className="quick-info">
               <h2 className="quick-info-headline">{element.name}</h2>
               <p className="quick-info-description">{element.description}</p>
