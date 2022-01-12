@@ -8,8 +8,7 @@ import ReactPlayer from "react-player";
 import { useState } from 'react';
 const style = {
   width: '100%',
-  height: '100vh',
-  bgcolor: '#000'
+  height: 'auto'
 };
 
 function App() {
