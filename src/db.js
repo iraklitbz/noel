@@ -4,7 +4,7 @@ const listVideos = [
     name: 'Documentary BoaMistura',
     description: 'Produced by Blur Film & Monte Perdido',
     urlv: 'https://vimeo.com/658634127',
-    videourl: 'https://vimeo.com/659448288',
+    videourls: ['https://vimeo.com/659448288'],
     img: 'trabajo1',
     stitle: 'Documentary BoaMistura',
     antetitulo: 'Produced by Blur Film & Monte Perdido'
@@ -61,12 +61,12 @@ const listVideos = [
   },
   {
     id: 7,
-    name: 'Documentary Silence Tears of the Midwives',
+    name: 'Silence Tears of the Midwife',
     description: 'Produced by PrimeScape L.A',
     urlv: 'https://vimeo.com/659017850',
     videourls: ['https://vimeo.com/659421102'],
     img: 'trabajo6',
-    stitle: 'Documentary Silence Tears of the Midwives',
+    stitle: 'Silence Tears of the Midwife',
     antetitulo: 'Produced by PrimeScape L.A',
     produced: 'One Breath & Midwife Vision',
   },
@@ -213,16 +213,16 @@ const listVideos = [
     produced: 'Produced by Spike Lee',
     extra1: 'This Short Film was produced by Spike Lee and directed by Stefon Bristol and edited by Noel Rayo.',
     extra2: 'After a rally of awards and festivals, Netflix created the feature film with an extended version of the same script. Also produced by Spike Lee.',
-    gallery: ['1.png', '3.jpeg', '2.png']
+    gallery: ['3.jpeg', '2.png']
   },
   {
     id: 20,
-    name: 'Antes',
+    name: 'Serie "Antes"',
     description: 'Estela Film & Pólvora Film',
-    urlv: 'https://vimeo.com/676867100',
+    urlv: 'https://vimeo.com/676866893',
     videourls: ['https://vimeo.com/255182920'],
     img: 'trabajo20',
-    stitle: 'Antes',
+    stitle: 'Serie "Antes"',
     antetitulo: 'Estela Film & Pólvora Film'
   },
   {
