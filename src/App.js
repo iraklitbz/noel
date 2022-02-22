@@ -8,8 +8,7 @@ import ReactPlayer from "react-player";
 import { useState } from 'react';
 const style = {
   width: '100%',
-  height: '100vh',
-  bgcolor: '#000'
+  height: 'auto'
 };
 
 function App() {
@@ -69,7 +68,7 @@ function App() {
               {selectedVideo.extra7 ? <h4 className="text-sm margin-top-xxxs">{selectedVideo.extra7}</h4> : null}
             </div>
             {selectedVideo.gallery ? 
-                <div className="gallery margin-top-md">
+                <div className="gallery max-width-sm margin-left-auto margin-right-auto margin-top-xl">
                   {selectedVideo.gallery.map(element => (
                     <img key={element} src={`/img/trabajo${selectedVideo.id}/${element}`} />
                   ))}
