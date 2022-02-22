@@ -22,7 +22,9 @@ function App() {
     setOpen(false);
     setSelectedVideo({})
   };
+
   const [selectedVideo, setSelectedVideo] = useState({});
+    console.log(selectedVideo)
   return (
     <div className="App">
       <Header />
@@ -42,13 +44,17 @@ function App() {
          </span>
           <div className="container max-width-lg">
             <div className="full-ratio">
+            {selectedVideo.videourls?.map(element => (
               <ReactPlayer
-                  className="react-player"
-                  url={selectedVideo.urlv}
-                  width="100%"
-                  height="100%"
-                  controls={true}
-                />
+              key={element}
+              className="react-player"
+              url={element}
+              width="100%"
+              height="100%"
+              controls={true}
+              />
+            ))}
+             
             </div>
             <div className="video-detail">
               <h2 className="text-md margin-bottom-xxxs">{selectedVideo.stitle}</h2>
@@ -59,11 +65,13 @@ function App() {
               {selectedVideo.extra3 ? <h4 className="text-sm margin-top-xxxs">{selectedVideo.extra3}</h4> : null}
               {selectedVideo.extra4 ? <h4 className="text-sm margin-top-xxxs">{selectedVideo.extra4}</h4> : null}
               {selectedVideo.extra5 ? <h4 className="text-sm margin-top-xxxs">{selectedVideo.extra5}</h4> : null}
+              {selectedVideo.extra6 ? <h4 className="text-sm margin-top-xxxs">{selectedVideo.extra6}</h4> : null}
+              {selectedVideo.extra7 ? <h4 className="text-sm margin-top-xxxs">{selectedVideo.extra7}</h4> : null}
             </div>
             {selectedVideo.gallery ? 
                 <div className="gallery margin-top-md">
                   {selectedVideo.gallery.map(element => (
-                    <img src={`/img/trabajo${selectedVideo.id}/${element}`} />
+                    <img key={element} src={`/img/trabajo${selectedVideo.id}/${element}`} />
                   ))}
 
                 </div> 
