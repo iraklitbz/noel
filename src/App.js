@@ -13,6 +13,7 @@ const style = {
 
 function App() {
   const [open, setOpen] = useState(false);
+  const [isReady, setIsReady] = useState(false);
   const handleOpen = (single) => {
     setSelectedVideo(single);
     setOpen(true)
@@ -20,10 +21,13 @@ function App() {
   const handleClose = () => {
     setOpen(false);
     setSelectedVideo({})
+    setIsReady(false)
   };
 
   const [selectedVideo, setSelectedVideo] = useState({});
-    console.log(selectedVideo)
+  const handleReady = () => {
+    setIsReady(true)
+  }
   return (
     <div className="App">
       <Header />
@@ -42,15 +46,17 @@ function App() {
           <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
          </span>
           <div className="container max-width-lg">
-            <div className="full-ratio">
+            <div className={`full-ratio single ${isReady ? 'active' : ''}`}>
+              <div className="velo"></div>
             {selectedVideo.videourls?.map(element => (
               <ReactPlayer
-              key={element}
-              className="react-player"
-              url={element}
-              width="100%"
-              height="100%"
-              controls={true}
+                onReady={handleReady}
+                key={element}
+                className="react-player"
+                url={element}
+                width="100%"
+                height="100%"
+                controls={true}
               />
             ))}
              
@@ -69,8 +75,8 @@ function App() {
             </div>
             {selectedVideo.gallery ? 
                 <div className="gallery max-width-sm margin-left-auto margin-right-auto margin-top-xl">
-                  {selectedVideo.gallery.map(element => (
-                    <img key={element} src={`/img/trabajo${selectedVideo.id}/${element}`} />
+                  {selectedVideo.gallery?.map(element => (
+                    <img key={element} src={`/img/trabajo${selectedVideo.folder}/${element}`} />
                   ))}
 
                 </div> 

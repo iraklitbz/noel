@@ -28,6 +28,7 @@
   z-index: 100;
   flex-wrap: wrap;
 
+
   .react-player {
     padding-top: 56.25%;
     position: relative; 
@@ -35,6 +36,14 @@
     &:not(:only-child) {
       margin-bottom: 50px;
     }
+  }
+  &.single {
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    &.active {
+      opacity: 1;
+    }
+    
   }
   .react-player > div {
     position: absolute;
