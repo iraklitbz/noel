@@ -47,7 +47,7 @@ function App() {
          </span>
           <div className="container max-width-lg">
             <div className={`full-ratio single ${isReady ? 'active' : ''}`}>
-              <div className="velo"></div>
+
             {selectedVideo.videourls?.map(element => (
               <ReactPlayer
                 onReady={handleReady}
@@ -80,6 +80,28 @@ function App() {
                   ))}
 
                 </div> 
+            : null
+            }
+
+            {selectedVideo.nextVideoinfo ? 
+              <div className="margin-top-lg">
+                <div className={`full-ratio single ${isReady ? 'active' : ''}`}>
+                      <ReactPlayer
+                        onReady={handleReady}
+                        className="react-player"
+                        url={selectedVideo.nextVideoinfo[0]}
+                        width="100%"
+                        height="100%"
+                        controls={true}
+                      />
+                  </div>    
+                  <div className="video-detail">
+                    <h2 className="text-md margin-bottom-xxxs">{selectedVideo.nextVideoinfo[1]}</h2>
+                     <h4 className="text-sm">{selectedVideo.nextVideoinfo[2]}</h4>
+                    
+                  </div>
+                </div>
+                
             : null
             }
            
