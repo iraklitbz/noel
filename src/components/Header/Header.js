@@ -7,7 +7,7 @@ const Header = () => {
           <img src="logo.png" />
         </a>
         <ul className="nav-list flex gap-xs">
-          <li><a href="/">Contacto /</a></li>
+          <li><a href="/">Contacto |</a></li>
           <li><a href="/"><i className='bx bxl-instagram'></i></a></li>
           <li><a href="/"><i className='bx bxl-twitter'></i></a></li>
         </ul>

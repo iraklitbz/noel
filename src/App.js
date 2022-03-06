@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import ReactPlayer from "react-player";
 import { useState } from 'react';
+import Footer from './components/Footer/Footer';
 const style = {
   width: '100%',
   height: 'auto'
@@ -110,7 +111,7 @@ function App() {
          
         </Box>
       </Modal>
-      
+      <Footer />
     </div>
   );
 }
