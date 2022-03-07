@@ -7,7 +7,64 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  .main-logo {
+  padding: var(--space-md) var(--space-md);
+  &.active {
+    position: fixed;
+  }
+  .quick-menu {
+    position: fixed;
+    max-width: 400px;
+    width: 100%;
+    z-index: 4000;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: #000;
+    transition: left 0.2s linear;
+    padding: 200px var(--space-md) var(--space-md) var(--space-md);
+    .quick-menu-box {
+      color: var(--main-color);
+      .quick-i {
+        li {
+          font-size: 16px;
+        }
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--main-color);
+        margin-bottom: var(--space-sm);
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: var(--space-sm);
+        em {
+          font-style: italic;
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+    &.active {
+      left: 0%;
+    }
+  }
+  .menu-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 9999;
+    .menuButton {
+      cursor: pointer;
+      i {
+        font-size: 35px;
+        color: var(--main-color);
+      }
+    }
+  }
+  .main-logo img {
     max-width: 270px;
     width: 100%;
   }
@@ -35,7 +92,7 @@
 
 .footer {
   background-color: #000;
-  padding: var(--space-lg) 0;
+  padding: var(--space-xs) 0;
   width: 100%;
   .main-logo {
     max-width: 270px;
@@ -43,9 +100,13 @@
   }
  
   .nav-list {
+    width: 100%;
+    justify-content: center;
     li {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
+      font-size: 14px;
       &:first-child {
         a {
           font-weight: bold;

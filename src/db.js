@@ -547,6 +547,16 @@ const listVideos = [
     stitle: 'Alhambra',
     antetitulo: 'CPWorks'
   },
+   {
+    id: 53,
+    name: 'BBVA',
+    description: 'ContestArea',
+    urlv: 'https://vimeo.com/685542469',
+    videourls: ['https://vimeo.com/57612500'],
+    img: 'trabajo53',
+    stitle: 'BBVA',
+    antetitulo: 'ContestArea'
+  },
   
 ];
 
