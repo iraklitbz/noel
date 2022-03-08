@@ -31,8 +31,9 @@ const Header = () => {
         </div>
         <div className="quick-menu-box margin-top-xl">
           <h3>Contact</h3>
-          <ul class="nav-list flex gap-xs quick-i">
-            <li>info@noelrayo.com |</li>
+          <ul class="nav-list flex quick-i">
+            <li>info@noelrayo.com</li>
+            <li>|</li>
             <li>+34 647681946</li>
           </ul>
 
