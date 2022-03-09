@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactPlayer from "react-player";
 import Gallery from "./Gallery";
 
 const Hero = ({handleOpen, setSelectedVideo}) => {
